@@ -4,25 +4,26 @@
 	<head>
 		<!-- Basic Page Info -->
 		<meta charset="utf-8" />
+		{{-- ! --}}
 		<title>@yield('pageTitle')</title>
 
 		<!-- Site favicon -->
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
-			href="vendors/images/apple-touch-icon.png"
+			href="/back/vendors/images/apple-touch-icon.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="vendors/images/favicon-32x32.png"
+			href="/back/vendors/images/favicon-32x32.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="16x16"
-			href="vendors/images/favicon-16x16.png"
+			href="/back/vendors/images/favicon-16x16.png"
 		/>
 
 		<!-- Mobile Specific Metas -->
@@ -37,13 +38,13 @@
 			rel="stylesheet"
 		/>
 		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="vendors/styles/core.css" />
+		<link rel="stylesheet" type="text/css" href="/back/vendors/styles/core.css" />
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="vendors/styles/icon-font.min.css"
+			href="/back/vendors/styles/icon-font.min.css"
 		/>
-		<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+		<link rel="stylesheet" type="text/css" href="/back/vendors/styles/style.css" />
 
 
 		<!-- Google Tag Manager -->
@@ -64,10 +65,10 @@
         @stack('stylesheets')
 	</head>
 	<body>
-		<div class="pre-loader">
+		{{-- <div class="pre-loader">
 			<div class="pre-loader-box">
 				<div class="loader-logo">
-					<img src="vendors/images/deskapp-logo.svg" alt="" />
+					<img src="/back/vendors/images/deskapp-logo.svg" alt="" />
 				</div>
 				<div class="loader-progress" id="progress_div">
 					<div class="bar" id="bar1"></div>
@@ -75,7 +76,7 @@
 				<div class="percent" id="percent1">0%</div>
 				<div class="loading-text">Loading...</div>
 			</div>
-		</div>
+		</div> --}}
 
 		<div class="header">
 			<div class="header-left">
@@ -171,7 +172,7 @@
 								<ul>
 									<li>
 										<a href="#">
-											<img src="vendors/images/img.jpg" alt="" />
+											<img src="/back/vendors/images/img.jpg" alt="" />
 											<h3>John Doe</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -181,7 +182,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/photo1.jpg" alt="" />
+											<img src="/back/vendors/images/photo1.jpg" alt="" />
 											<h3>Lea R. Frith</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -191,7 +192,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/photo2.jpg" alt="" />
+											<img src="/back/vendors/images/photo2.jpg" alt="" />
 											<h3>Erik L. Richards</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -201,7 +202,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/photo3.jpg" alt="" />
+											<img src="/back/vendors/images/photo3.jpg" alt="" />
 											<h3>John Doe</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -211,7 +212,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/photo4.jpg" alt="" />
+											<img src="/back/vendors/images/photo4.jpg" alt="" />
 											<h3>Renee I. Hansen</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -221,7 +222,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/img.jpg" alt="" />
+											<img src="/back/vendors/images/img.jpg" alt="" />
 											<h3>Vicki M. Coleman</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -243,7 +244,7 @@
 							data-toggle="dropdown"
 						>
 							<span class="user-icon">
-								<img src="vendors/images/photo1.jpg" alt="" />
+								<img src="/back/vendors/images/photo1.jpg" alt="" />
 							</span>
 							<span class="user-name">Ross C. Lopez</span>
 						</a>
@@ -267,7 +268,7 @@
 				</div>
 				<div class="github-link">
 					<a href="https://github.com/dropways/deskapp" target="_blank"
-						><img src="vendors/images/github.svg" alt=""
+						><img src="/back/vendors/images/github.svg" alt=""
 					/></a>
 				</div>
 			</div>
@@ -446,9 +447,9 @@
 		<div class="left-side-bar">
 			<div class="brand-logo">
 				<a href="index.html">
-					<img src="vendors/images/deskapp-logo.svg" alt="" class="dark-logo" />
+					<img src="/back/vendors/images/deskapp-logo.svg" alt="" class="dark-logo" />
 					<img
-						src="vendors/images/deskapp-logo-white.svg"
+						src="/back/vendors/images/deskapp-logo-white.svg"
 						alt=""
 						class="light-logo"
 					/>
@@ -669,7 +670,7 @@
 								<span class="micon bi bi-layout-text-window-reverse"></span>
 								<span class="mtext"
 									>Landing Page
-									<img src="vendors/images/coming-soon.png" alt="" width="25"
+									<img src="/back/vendors/images/coming-soon.png" alt="" width="25"
 								/></span>
 							</a>
 						</li>
@@ -719,8 +720,15 @@
 						</div>
 					</div>
 					<div class="pd-20 bg-white border-radius-4 box-shadow mb-30">
+
+
+						
                         {{--!  --}}
                         @yield('content')
+
+
+
+
                     </div>
 				</div>
 				<div class="footer-wrap pd-20 mb-20 card-box">
@@ -733,10 +741,10 @@
 		</div>
 	
 		<!-- js -->
-		<script src="vendors/scripts/core.js"></script>
-		<script src="vendors/scripts/script.min.js"></script>
-		<script src="vendors/scripts/process.js"></script>
-		<script src="vendors/scripts/layout-settings.js"></script>
+		<script src="/back/vendors/scripts/core.js"></script>
+		<script src="/back/vendors/scripts/script.min.js"></script>
+		<script src="/back/vendors/scripts/process.js"></script>
+		<script src="/back/vendors/scripts/layout-settings.js"></script>
         @stack('scripts')
 	</body>
 </html>
